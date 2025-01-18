@@ -1,0 +1,100 @@
+/* Placeholder cho box input */
+#input-box[data-placeholder]:empty::before {
+    content: attr(data-placeholder);
+    color: #ccc;
+    font-style: italic;
+    pointer-events: none;
+}
+
+/* Các phần còn lại */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+#header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+#main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 140px);
+    background-image: url("resources/images/background_monkey.jpg");
+    background-repeat: repeat 2;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 800px;
+    width: 100%;
+}
+
+.box {
+    width: 100%;
+    background: #f4f4f9;
+    border: 2px solid #2ecc71;
+    border-radius: 5px;
+    margin: 10px 0;
+    padding: 15px;
+    font-size: 16px;
+    color: #333;
+    text-align: center;
+}
+
+#input-box {
+    background-color: #fff;
+    border-color: #3498db;
+    min-height: 100px;
+    max-height: 200px;
+    overflow: auto;
+    outline: none;
+}
+
+#input-box:focus {
+    border-color: #2980b9;
+    box-shadow: 0 0 5px rgba(41, 128, 185, 0.8);
+}
+
+#output-box {
+    background-color: #ecf0f1;
+    color: #2c3e50;
+    min-height: 100px;
+    max-height: 200px;
+    overflow: auto;
+    font-weight: bold;
+    text-align: center;
+}
+
+#footer {
+    color: black;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+button#submit-btn {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button#submit-btn:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}

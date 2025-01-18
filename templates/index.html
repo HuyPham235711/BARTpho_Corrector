@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test UI</title>
+    <link rel="stylesheet" href="../static/BARTpho_testUI.css">
+</head>
+<body>
+    <div id="header">
+        <h1>BARTpho Corrector</h1>
+    </div>
+
+    <div id ="main">
+        <div class = "container">
+            <div class = "box">
+                MAX LENGTH <span id="current-len">0</span>/512
+            </div>
+
+            <div class="box" id="input-box" contenteditable="true" data-placeholder="Enter your text here"></div>
+
+            <div class = "box" id = "output-box">
+                Corrected text will be displayed here
+            </div>
+
+            <div >
+                <button id = "submit-btn">Correct it now!</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer">
+        <p>@BARTpho_Corrector by Huy Pham</p>
+    </div>
+
+    <script src="../static/BARTpho_testUI.js"></script>
+</body>
+</html>
